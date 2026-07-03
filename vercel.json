@@ -1,9 +1,6 @@
 {
-  "version": 2,
-  "buildCommand": false,
-  "outputDirectory": ".",
   "functions": {
-    "api/*.js": {
+    "api/proxy.js": {
       "runtime": "@vercel/node@3"
     }
   }
