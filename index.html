@@ -878,7 +878,7 @@
   </div>
 </div>
  
- <audio id="audioPlayer"></audio>
+<audio id="audioPlayer" crossorigin="anonymous"></audio>
 
 <script>
 
@@ -1407,7 +1407,7 @@ function renderSearchResults(items) {
       return;
     }
     currentPreviewId = id;
-    audioPlayer.src = preview;
+    audioPlayer.src = '/api/proxy?url=' + encodeURIComponent(preview);
     npTrack.textContent = title;
     npArtist.textContent = artist;
     audioPlayer.load();
